@@ -1,0 +1,27 @@
+word = input('Enter a word:')
+new_word = ""
+for i in range(len(word)):
+    if (word[i] == "a"):
+        new_word = new_word + "@"
+    elif (word[i] == "A"):
+        new_word = new_word + "4"   
+    elif (word[i] == "e"):
+        new_word = new_word + "3"
+    elif (word[i] == "g"):
+        new_word = new_word + "9"
+    elif (word[i] == "G"):
+        new_word = new_word + "6"
+    elif ((word[i] == "o") or (word[i] == "O")):
+        new_word = new_word + "0"
+    elif ((word[i] == "s") or (word[i] == "S")):
+        new_word = new_word + "5"
+    elif (word[i] == "i"):
+        new_word = new_word + "!"
+    elif (word[i] == "I"):
+        new_word = new_word + "1"
+    elif (word[i] == "u"):
+        new_word = new_word + "oe"
+    else:
+        new_word = new_word + word[i]
+
+print(new_word)
